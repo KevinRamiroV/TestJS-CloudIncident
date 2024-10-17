@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudIncident - Incidentes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main class="Main-Container">
+        <button id="AbrirCrearIncidente" class="AbrirCrearIncidente ">Crear incidente</button>
+         <div class="Form-Container">
+            <form id="FormCrearIncidente">
+                <div class="Form-Item mt-10">
+                    <label for="NombreIncidente">Asunto:</label>
+                    <input type="text" name="NombreIncidente" id="NombreIncidente" required>
+                 </div>
+                 <div class="Form-Item">
+                    <label for="DetalleIncidente">Detalles:</label>
+                    <input type="text" name="DetalleIncidente" id="DetalleIncidente" required>
+                 </div>
+                 <div class="Form-Item">
+                    <label for="PrioridadIncidente">Prioridad:</label>
+                    <select name="PrioridadIncidente" id="PrioridadIncidente">
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select>
+                 </div>
+                 <div class="Form-Item">
+                    <input type="submit" class="CrearIncidente" id="GuardarIncidente" value="Crear">
+                 </div>
+            </form>
+        </div>
+        <div class="TIncidentes-Container">
+            <table id="TablaIncidentes" border="1" >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Detalle</th>
+                        <th>Prioridad</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán las filas de los incidentes -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="../app.js"></script>
+</body>
+</html>

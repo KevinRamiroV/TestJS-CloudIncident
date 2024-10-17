@@ -1,0 +1,44 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Main-Container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.Main-Container .AbrirCrearIncidente{
+    width: 150px;
+    margin-top: 100px;
+    padding: 10px;
+}
+.Form-Container{
+    padding-top: 30px;
+    visibility: hidden;
+}
+.Form-Item{
+    margin-top: 10px;
+}
+.Form-Item:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+
+.CrearIncidente{
+    width: 150px;
+    margin-top: 10px; 
+}
+.TIncidentes-Container{
+    margin-top: 20px;
+}
+
+.iconoBorrar, .iconoEditar{
+    cursor: pointer;
+}
