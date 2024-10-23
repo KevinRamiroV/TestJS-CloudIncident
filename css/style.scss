@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//Index
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: gray;
+  height: 100px;
+  background: radial-gradient(circle, #def2f7, #b9e6ff);
+  border-bottom: 5px solid #172e48;;
+  .logoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .logo{
+        width: 80px;
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+  }
+  .navbarLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 0 25px;
+        list-style: none;
+        a {
+          margin: 10px 30px 0 10px;
+          text-decoration: none;
+          list-style-type: none;
+          font-family: "Quicksand", sans-serif;
+          font-size: 22px;
+          font-weight: bold;
+          color: #172e48;
+          padding: 4px 5px 4px 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background: radial-gradient(circle, #eff5f7, #bce5fc);
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        margin: 10px 50px 50px 50px;
+        align-items: center;
+        .main-left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 5px solid #172e48;
+            border-radius: 8px;
+            height: 400px;
+        }
+        .main-right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .box-info{
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+                width: 500px;
+                height: 120px;
+                border: 5px solid #172e48;
+                border-radius: 8px;
+                margin: 10px 0;
+                p{
+                    margin-left: 40px;
+                }
+                .box-content{
+                    display: flex;
+                    justify-content:center;
+                    flex-direction: column;
+                    height: 100%;
+                    border-left: 5px solid #172e48;
+                }
+            }
+        }
+    }
+}
+
+
+.footer{
+    height: 100px;
+    display: flex;
+    background: radial-gradient(circle, #def2f7, #b9e6ff);
+    border-top: 5px solid #172e48;
+}
+
+//Incidentes
+.Main-Container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  .AbrirCrearIncidente {
+    width: 150px;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  .Form-Container {
+    padding-top: 30px;
+    form {
+      visibility: hidden;
+      .Form-Item {
+        margin-top: 10px;
+        .CrearIncidente {
+          width: 150px;
+          margin-top: 10px;
+        }
+      }
+      .Form-Item:nth-child(4) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.TIncidentes-Container {
+  margin-top: 20px;
+}
+.iconoBorrar,
+.iconoEditar {
+  cursor: pointer;
+}

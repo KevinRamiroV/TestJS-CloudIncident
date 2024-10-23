@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: gray;
+  height: 100px;
+  background: radial-gradient(circle, #def2f7, #b9e6ff);
+  border-bottom: 5px solid #172e48;
+}
+.navbar .logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar .logoContainer .logo {
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+.navbar .navbarLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbarLinks ul {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbarLinks ul li {
+  margin: 0 25px;
+  list-style: none;
+}
+.navbar .navbarLinks ul li a {
+  margin: 10px 30px 0 10px;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #172e48;
+  padding: 4px 5px 4px 5px;
+  cursor: pointer;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  background: radial-gradient(circle, #eff5f7, #bce5fc);
+}
+.main-container .main-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin: 10px 50px 50px 50px;
+  align-items: center;
+}
+.main-container .main-content .main-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #172e48;
+  border-radius: 8px;
+  height: 400px;
+}
+.main-container .main-content .main-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .main-content .main-right .box-info {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  width: 500px;
+  height: 120px;
+  border: 5px solid #172e48;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+.main-container .main-content .main-right .box-info p {
+  margin-left: 40px;
+}
+.main-container .main-content .main-right .box-info .box-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border-left: 5px solid #172e48;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  background: radial-gradient(circle, #def2f7, #b9e6ff);
+  border-top: 5px solid #172e48;
+}
+
+.Main-Container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+.Main-Container .AbrirCrearIncidente {
+  width: 150px;
+  margin-top: 100px;
+  padding: 10px;
+}
+.Main-Container .Form-Container {
+  padding-top: 30px;
+}
+.Main-Container .Form-Container form {
+  visibility: hidden;
+}
+.Main-Container .Form-Container form .Form-Item {
+  margin-top: 10px;
+}
+.Main-Container .Form-Container form .Form-Item .CrearIncidente {
+  width: 150px;
+  margin-top: 10px;
+}
+.Main-Container .Form-Container form .Form-Item:nth-child(4) {
+  display: flex;
+  justify-content: center;
+}
+
+.TIncidentes-Container {
+  margin-top: 20px;
+}
+
+.iconoBorrar,
+.iconoEditar {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=output.css.map */
